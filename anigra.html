@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アニメーションとグラデーション</title>
+    <link rel="stylesheet" href="anigra.css">
+</head>
+
+<body>
+    <h1>アニメーションとグラデーションについて</h1>
+
+    <h2>アニメーション</h2>
+    <div id="anime">
+        <p>ニコちゃんがチカチカ</p>
+        <a href="https://google.co.jp">
+            <img src="niko.png" id="niko" alt="niko-chan">
+        </a>
+    </div><!-- #anime -->
+
+    <h2>グラデーション</h2>
+    <div id="grade">
+        <div id="linear">
+            線状
+        </div><!-- #linear -->
+        <div id="px">
+            142px
+        </div><!-- #ps -->
+        <div id="radial">
+            みんな、<br>
+            オラに元気をわけてくれ…！
+        </div><!-- #radial -->
+
+        <p>
+            グラデーションは「サルワカ　グラデーション」で検索
+        </p>
+        <p>
+            線状のdivにはheightとline-heightで300pxを指定<br>
+            フォントサイズがデフォルト(初期値)の16pxの場合、<br>
+            300px-16px=284pxとなり、2で割った142pxの空間が上下に発生<br>
+        </p>
+        <div></div>
+    </div><!-- #grade -->
+</body>
+
+</html>

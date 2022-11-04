@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+#anime,
+#grade,
+h1,
+h2,
+p {
+    width: 100%;
+    text-align: center;
+}
+
+/* アニメーションの設定:
+  アニメーション名 長さ 滑らかに 繰り返し 反転再生 */
+#niko {
+    animation: niko 3.0s ease infinite alternate;
+    animation-delay: 5.0s;
+}
+
+/* 要素の透明化 ⇒ 0 は透明、1 はくっきり */
+@keyframes niko {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#grade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#grade>div {
+    width: 300px;
+    height:  300px;
+}
+
+#linear {
+    background: linear-gradient(
+        to left top, gray 50%, blue 100%
+    );
+    border-radius: 30px;
+    color: #f00;
+    font-weight: bold;
+    line-height: 300px;
+}
+
+#grade>#px {
+    width: 142px;
+    height: 142px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+#grade>#radial {
+    background: radial-gradient(
+        #99f,#fff, #00f
+    );
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 3px #aaa;
+    color: #fff;
+    font-weight: bold;
+}
+
+#grade p:last-of-type {
+    line-height: 3.0;
+}
+
+
